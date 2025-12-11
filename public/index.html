@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Information System</h1>
+
+<div class="container">
+
+    <h2>Add Student</h2>
+    <input id="roll" placeholder="Roll Number">
+    <input id="name" placeholder="Name">
+    <input id="age" placeholder="Age">
+    <input id="courses" placeholder="Courses (comma separated)">
+    <button onclick="addStudent()">Add Student</button>
+
+    <hr>
+
+    <h2>Search Student</h2>
+    <input id="searchKey" placeholder="Search by name, roll, or course" onkeyup="searchStudent()">
+
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
